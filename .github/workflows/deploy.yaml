@@ -13,6 +13,7 @@ concurrency: deploy
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: production
     steps:
       - name: Cloning repo
         uses: actions/checkout@v4
