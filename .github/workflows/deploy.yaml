@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 0
 
       - name: Push to dokku
-        uses: dokku/github-action@v1.4.0
+        uses: dokku/github-action@v1.5.0
         with:
           git_remote_url: 'ssh://dokku@dokku.plett.net:22/gettingstarted'
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
